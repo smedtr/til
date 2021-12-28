@@ -1,10 +1,10 @@
 # Models
 
-### Many-To-Many refering to itself, example employee and manager
-Via a many to many people I want to be able to track the manager of an employee.
-To keep consistency the manager is also part of the employee table as employee.
-I track this via a many-to-many people where I have employee, supervisor ( = manager) the role ( = people-manager)
-and starting and ending date. 
+## Many-To-Many refering to itself, example employee and manager
+Via a many to many relationship I want to be able to track the manager of an employee.
+To keep consistency the manager is a record in the employee model.
+I track this via a many-to-many relationship throug the model EmployeeSupervisor where I have employee and the supervisor ( = manager). 
+The EmployeeSupervisor relationship contains extra info in regards to : role ( = people-manager), starting and ending date. 
 
 *Hereby an extract of the model definition :* 
 
